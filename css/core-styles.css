@@ -5,11 +5,11 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primary: #A14D3A;
-    --primaryLight: #001F3F;
-    --secondary: #2F4F4F;
-    --secondaryLight: #FFBA43;
+    --primaryLight: #2F4F4F;
+    --secondary: #B5A748;
+    --secondaryLight: #EFE8D8;
     --headerColor: #3B2F2F;
-    --bodyTextColor: #4b3c3c;
+    --bodyTextColor: #2f3c4f;
     --bodyTextColorWhite: #EFE8D8;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -150,7 +150,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: var(--primaryLight);
     opacity: 1;
     top: 0;
     left: 0;
