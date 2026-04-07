@@ -658,6 +658,7 @@
     width: 100%;
     /* Makes img tag act as a background image */
     object-fit: cover;
+    object-position: center 32%;
   }
 }
 /* Tablet - 768px */
