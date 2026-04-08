@@ -54,6 +54,7 @@
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--bodyTextColor);
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   *,
   *:before,
