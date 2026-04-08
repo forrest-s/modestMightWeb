@@ -228,6 +228,9 @@
   #dark-mode-toggle:hover {
     cursor: pointer;
   }
+  #banner-712 .cs-background img {
+    object-position: center 20%;
+  }
 }
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
@@ -236,6 +239,9 @@
 @media only screen and (max-width: 63.9375rem) {
   body.cs-open {
     overflow: hidden;
+  }
+  #banner-712 .cs-background img {
+    object-position: center -30%;
   }
   #cs-navigation {
     width: 100%;
@@ -658,7 +664,6 @@
     width: 100%;
     /* Makes img tag act as a background image */
     object-fit: cover;
-    object-position: center;
   }
 }
 /* Tablet - 768px */
