@@ -53,12 +53,12 @@ class PageHeader extends HTMLElement {
         </header>
     `;
 
-    // Set active link based on current page
-    const path = window.location.pathname;
-    this.querySelectorAll('.cs-li-link').forEach(link => {
-      if (link.getAttribute('href') === path) {
-        link.classList.add('cs-active');
-      }
+    const path = window.location.pathname.replace('.html', '');
+        this.querySelectorAll('.cs-li-link').forEach(link => {
+        const linkPath = link.getAttribute('href').replace('.html', '');
+        if (linkPath === path) {
+            link.classList.add('cs-active');
+        }
     });
   }
 }
