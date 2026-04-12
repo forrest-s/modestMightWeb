@@ -10,6 +10,10 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
 
   if (!name || !email || !username) return;
 
+  if (!name || !email || !username) return;
+
+  const token = crypto.randomUUID();
+
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/contacts`, {
       method: 'POST',
@@ -17,17 +21,13 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
         'Content-Type': 'application/json',
         'apikey': SUPABASE_ANON_KEY,
         'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Prefer': 'return=representation'
+        'Prefer': 'return=minimal'
       },
-      body: JSON.stringify({ name, email, username })
+      body: JSON.stringify({ name, email, username, token })
     });
 
     if (!res.ok) throw new Error('Submission failed');
 
-    const data = await res.json();
-    const token = data[0].token;
-
-    // Send welcome email via Vercel function
     await fetch('/api/send-welcome', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -36,7 +36,8 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
 
     e.target.reset();
     // Optional: show a success message here
-  } catch {
+  } catch (err) {
+    console.error(err);
     // Optional: show an error message here
   }
 });
