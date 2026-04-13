@@ -86,27 +86,36 @@
                         </p>
                     </div>
                     <form id="cs-form-265" name="Contact Form" method="post">
+                        <!-- Honeypot spam protection -->
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
                         <label>
                             Name
                             <input required type="text" id="name-265" name="name" placeholder="Name">
                         </label>
                         <label>
                             Email
-                            <input required type="text" id="email-265" name="email" placeholder="Email">
+                            <input required type="email" id="email-265" name="email" placeholder="Email">
                         </label>
                         <label>
-                            Phone
-                            <input required type="text" id="phone-265" name="phone" placeholder="Phone">
+                            Phone (optional)
+                            <input type="tel" id="phone-265" name="phone" placeholder="Phone">
                         </label>
                         <label>
                             How Did You Find Us
-                            <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                            <select id="find-265" name="find-us">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="google">Google Search</option>
+                                <option value="referral">Referral</option>
+                                <option value="social">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
                         </label>
                         <label class="cs-label-message">
                             Message
-                            <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                            <textarea required name="Message" id="message-265" placeholder="Tell me about your project..."></textarea>
                         </label>
-                        <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                        <button class="cs-button-solid cs-submit" type="submit">Get My Free Quote</button>
                     </form>
                 </div>
                 <div class="cs-right-section">
