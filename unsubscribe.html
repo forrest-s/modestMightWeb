@@ -31,13 +31,15 @@
             </picture>
         </div>
 
-        <section class="cs-container">
-            <div id="unsubscribe-wrap">
+        <section class="cs-container" id="unsubscribe-wrap">
             <h1>Unsubscribe</h1>
-            <p>We're sorry to see you go. Click the button below to remove yourself from our mailing list.</p>
+            <p>Enter your email address below to confirm your unsubscribe request.</p>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" type="email" id="unsubscribe-email" placeholder="Enter your email" required>
+            </label>
             <button id="unsubscribe-btn" class="cs-button-solid">Unsubscribe</button>
             <p id="unsubscribe-status" aria-live="polite"></p>
-            </div>
         </section>
     </main>
     <page-footer></page-footer>

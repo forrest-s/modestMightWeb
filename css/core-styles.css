@@ -292,7 +292,7 @@
     align-items: center;
   }
   #cs-navigation .cs-logo {
-    width: 50%;
+    width: clamp(9rem, 75%, 20rem);
     /* max-width: 12.5rem; */
     height: 100%;
     margin: 0 auto 0 0;
@@ -843,11 +843,15 @@
   #cs-footer-269 .cs-container {
     max-width: 80rem;
     row-gap: 0;
+    align-items: center;
   }
   #cs-footer-269 .cs-logo-group {
     width: auto;
     /* pushes everything to the right of it as far as possible in a flexbox */
     margin-right: auto;
+  }
+  #cs-footer-269 .cs-logo {
+    margin-bottom: 0;
   }
   #cs-footer-269 .cs-text {
     width: 80%;

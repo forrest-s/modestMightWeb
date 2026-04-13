@@ -3,7 +3,7 @@ export default async function handler(req, res) {
 
   const { name, email, token } = req.body;
 
-  const unsubscribeLink = `https://modestmightweb.com/unsubscribe.html?token=${token}`;
+  const unsubscribeLink = `https://modestmightweb.com/unsubscribe?token=${token}&email=${encodeURIComponent(email)}`;
 
   const response = await fetch('https://api.mailgun.net/v3/mail.modestmightweb.com/messages', {
     method: 'POST',

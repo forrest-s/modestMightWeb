@@ -36,8 +36,8 @@ class PageHeader extends HTMLElement {
                                 </a>
                             </li>
                             <li class="cs-li">
-                                <a href="/test.html" class="cs-li-link">
-                                    Test
+                                <a href="/newsletter.html" class="cs-li-link">
+                                    Newsletter
                                 </a>
                             </li>
                         </ul>

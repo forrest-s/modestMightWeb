@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://www.modestmightweb.com/unsubscribed">
+
+    <meta name="description" content="You have been successfully unsubscribed from Modest Might Web emails.">
+    <meta name="robots" content="noindex">
+
+    <!--Social Media-->
+    <meta property="og:title" content="Unsubscribed | Modest Might Web">
+    <meta property="og:description" content="You have been successfully unsubscribed from Modest Might Web emails.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.modestmightweb.com/unsubscribed">
+    <meta property="og:image" content="https://www.modestmightweb.com/assets/images/social.jpg">
+
+    <!--Favicons-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Modest Might Web">
+    <meta name="theme-color" content="#2D4A3E">
+
+    <!--Preload-->
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-900.woff2" crossorigin>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <!--Scripts-->
+    <script>
+      if (!sessionStorage.getItem('unsubscribed')) {
+        window.location.href = '/';
+      }
+      sessionStorage.removeItem('unsubscribed');
+    </script>
+    <script src="/components/page-header.js" defer></script>
+    <script src="/components/page-footer.js" defer></script>
+
+    <title>Unsubscribed | Modest Might Web</title>
+</head>
+<body>
+  <page-header></page-header>
+  <main id="main">
+    <section class="cs-container" style="padding: 6rem 1rem; text-align: center;">
+      <h1>You've been unsubscribed.</h1>
+      <p>Sorry to see you go. If you ever change your mind, you're always welcome back.</p>
+      <a href="/" class="cs-button-solid">Back to Home</a>
+    </section>
+  </main>
+  <page-footer></page-footer>
+</body>
+</html>
