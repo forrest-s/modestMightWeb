@@ -1,0 +1,23 @@
+{
+  "name": "Modest Might Web",
+  "short_name": "Modest Might",
+  "description": "Websites with nothing wasted.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2D4A3E",
+  "icons": [
+    {
+      "src": "/assets/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

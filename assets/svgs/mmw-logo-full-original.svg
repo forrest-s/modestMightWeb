@@ -7,8 +7,11 @@
   <!-- Wordmark -->
   <text font-family="sans-serif" font-size="40" y="75" dominant-baseline="auto">
     <tspan x="275" font-weight="600" fill="#2D4A3E">Modest Might</tspan>
+    <!-- <tspan font-weight="400" fill="#2D4A3E"> Web</tspan> -->
   </text>
   <text x="278" y="112" font-family="sans-serif" font-size="40" font-weight="400" fill="#A0522D" dominant-baseline="auto" letter-spacing="2">
     Web
   </text>
+  <!-- Tagline -->
+  <!-- <text x="275" y="110" font-family="sans-serif" font-size="26" font-weight="400" fill="#A0522D" dominant-baseline="auto" letter-spacing="2">WEBSITES WITH NOTHING WASTED</text> -->
 </svg>

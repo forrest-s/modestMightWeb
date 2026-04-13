@@ -41,3 +41,29 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
     // Optional: show an error message here
   }
 });
+
+// unsubscribe email form
+document.getElementById('unsubscribe-request-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById('unsubscribe-email').value.trim();
+  const status = document.getElementById('unsubscribe-request-status');
+
+  status.textContent = 'Sending...';
+
+  try {
+    const res = await fetch('/api/send-unsubscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+
+    if (!res.ok) throw new Error('Failed');
+
+    status.textContent = 'Check your email for an unsubscribe link.';
+    e.target.reset();
+
+  } catch {
+    status.textContent = 'Something went wrong. Please try again.';
+  }
+});

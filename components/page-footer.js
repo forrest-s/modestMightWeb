@@ -6,7 +6,7 @@ class PageFooter extends HTMLElement {
                 <!-- Logo Group -->
                 <div class="cs-logo-group">
                     <a aria-label="go back to home" class="cs-logo" href="#top">
-                        <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/logos/logo3.png" alt="logo" width="240" height="32">
+                        <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/mmw-logo.svg" alt="logo" width="240" height="32">
                     </a>
                     <p class="cs-text">
                         Websites with nothing wasted. Handmade websites for hardworking businesses.
@@ -18,7 +18,7 @@ class PageFooter extends HTMLElement {
                         <span class="cs-header">Sitemap</span>
                     </li>
                     <li class="cs-nav-li">
-                        <a class="cs-nav-link" href="/index.html">Home</a>
+                        <a class="cs-nav-link" href="/">Home</a>
                     </li>
                     <li class="cs-nav-li">
                         <a class="cs-nav-link" href="/about.html">About</a>
