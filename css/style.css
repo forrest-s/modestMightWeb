@@ -1637,7 +1637,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 0.75rem;
-    color: #7D799C;
+    color: var(--bodyTextColor);
   }
   #meet-team-221 .cs-social {
     display: flex;
