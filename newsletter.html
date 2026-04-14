@@ -65,79 +65,64 @@
                 <img loading="lazy" decoding="async" src="assets/images/mountain_1.webp" alt="mountain" width="1280" height="568" aria-hidden="true">
             </picture>
         </div>
-
+    
         <!-- ============================================ -->
-        <!--                   Contact                    -->
+        <!--                Subscribe                     -->
         <!-- ============================================ -->
 
-        <section id="contact-1388">
+        <section id="RTsbs-459">
             <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact Us</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
-                    </p>
-                    <ul class="cs-ul">
-                        <li class="cs-li">
-                            <picture class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                            </picture>
-                            <div class="cs-flex-group">
-                                <span class="cs-header">Phone</span>
-                                <a href="tel:888-4565-789
-                                " class="cs-link">+1 (888) 4565 789
-                                </a>
-                            </div>
-                        </li>
-                        <li class="cs-li">
-                            <picture class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                            </picture>
-                            <div class="cs-flex-group">
-                                <span class="cs-header">Email</span>
-                                <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
-                            </div>
-                        </li>
-                        <li class="cs-li">
-                            <picture class="cs-icon-wrapper">
-                                <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                            </picture>
-                            <div class="cs-flex-group">
-                                <span class="cs-header">Address</span>
-                                <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div id="contact-1388" class="cs-content">
+                    <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
+                        <h3 class="cs-h3">Subscribe</h3>
+                        <label class="cs-label">
+                            Name
+                            <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+                        </label>
+                        <label class="cs-label cs-email">
+                            Email
+                            <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
+                        </label>
+                        <label class="cs-label">
+                            Username
+                            <input class="cs-input" required type="text" id="username-1388" name="username" placeholder="Username">
+                        </label>
+                        <button class="cs-button-solid cs-submit" type="submit">Subscribe</button>
+                        <p id="subscribe-request-status" aria-live="polite"></p>
+                    </form>
                 </div>
-                <!--Form-->
-                <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
-                    <h3 class="cs-h3">Subscribe</h3>
-                    <label class="cs-label">
-                        Name
-                        <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
-                    </label>
-                    <label class="cs-label cs-email">
-                        Email
-                        <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
-                    </label>
-                    <label class="cs-label">
-                        Username
-                        <input class="cs-input" required type="text" id="username-1388" name="username" placeholder="Username">
-                    </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-                </form>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/subscribe.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/subscribe.webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/subscribe.webp" alt="grass" width="649" height="617">
+                </picture>
             </div>
         </section>
-        <form id="unsubscribe-request-form">
-            <label class="cs-label">
-                Email
-                <input class="cs-input" required type="email" id="unsubscribe-email" placeholder="Enter your email">
-            </label>
-            <button class="cs-button-solid" type="submit">Send Unsubscribe Link</button>
-            <p id="unsubscribe-request-status" aria-live="polite"></p>
-        </form>
                                         
+        <!-- ============================================ -->
+        <!--             Unsubscribe                      -->
+        <!-- ============================================ -->
+
+        <section id="RTsbsr-459">
+            <div class="cs-container">
+                <div id="contact-1388" class="cs-content">
+                    <form class="cs-form" id="unsubscribe-request-form">
+                        <h3 class="cs-h3">Unsubscribe</h3>
+                        <label class="cs-label">
+                            Email
+                            <input class="cs-input" required type="email" id="unsubscribe-email" placeholder="Enter your email">
+                        </label>
+                        <button id="unsubscribe-btn" class="cs-button-solid cs-submit" type="submit">Send Unsubscribe Link</button>
+                        <p id="unsubscribe-request-status" aria-live="polite"></p>
+                    </form>
+                </div>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/unsubscribe.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/unsubscribe.webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/unsubscribe.webp" alt="grass" width="649" height="617">
+                </picture>
+            </div>
+        </section>                                       
     </main>
 
     <page-footer></page-footer>

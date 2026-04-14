@@ -54,11 +54,11 @@ class PageHeader extends HTMLElement {
     `;
 
     const path = window.location.pathname.replace('.html', '');
-        this.querySelectorAll('.cs-li-link').forEach(link => {
-        const linkPath = link.getAttribute('href').replace('.html', '');
-        if (linkPath === path) {
-            link.classList.add('cs-active');
-        }
+    this.querySelectorAll('.cs-li-link').forEach(link => {
+    const linkPath = link.getAttribute('href').replace('.html', '');
+    if (linkPath === path || (path === '/' && linkPath === '/index')) {
+        link.classList.add('cs-active');
+    }
     });
 
     // add classes for mobile navigation toggling

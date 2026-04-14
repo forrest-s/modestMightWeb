@@ -7,12 +7,15 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
   const name = document.getElementById('name-1388').value.trim();
   const email = document.getElementById('email-1388').value.trim();
   const username = document.getElementById('username-1388').value.trim();
+  const status = document.getElementById('subscribe-request-status')
 
   if (!name || !email || !username) return;
 
   if (!name || !email || !username) return;
 
   const token = crypto.randomUUID();
+
+  status.textContent = 'Subscribing...'
 
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/contacts`, {
@@ -36,9 +39,11 @@ document.getElementById('cs-form-1388').addEventListener('submit', async (e) => 
 
     e.target.reset();
     // Optional: show a success message here
+    status.textContent = 'Subscription successful. Check your email for welcome email.'
   } catch (err) {
     console.error(err);
     // Optional: show an error message here
+    status.textContent = 'Something went wrong. Please try again.'
   }
 });
 
